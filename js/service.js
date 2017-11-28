@@ -6,6 +6,6 @@ function Service($http) {
     var vm = this;
 
     vm.getAll = function() {
-        return $http.get('http://api.infestus.cc/api/feed');
+        return $http.get('https://api.infestus.cc/api/feed');
     };
 }
