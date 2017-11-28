@@ -8,6 +8,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 /*--- header ----*/
 
+@media screen and (max-width: 600px) {
+  .hidden-mobile {
+    visibility: hidden;
+    display: none;
+  }
+}
+
 .header {
     background: url(../images/infestus-background.jpg)no-repeat 0px 0px;
     background-size: cover;
