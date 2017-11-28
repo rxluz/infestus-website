@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Infestus</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!------ js ------>
+    <script src="js/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/service.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body ng-app="infestusApp" ng-controller="myCtrl">
+    <!--- header ---->
+    <div id="to-top" class="header-bg">
+        <div id="home" class="header">
+            <!--- container ---->
+            <div class="container">
+                <div class="header-logo">
+                    <h2><a href="#">Infestus</a></h2>
+                </div>
+                <div class="clearfix"> </div>
+                <!----- script-for-menu ---->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                    $("span.menu").click(function() {
+                        $(".header-nav ul").slideToggle("slow", function() {});
+                    });
+                </script>
+
+                <!----- script-for-menu ---->
+                <div class="clearfix"> </div>
+            </div>
+            <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mobile-divise">
+                                <img src="images/infestus-smartphone.png" width="375">
+                                <iframe class="mobile-player absolute" frameborder="0" allowfullscreen="1" gesture="media" title="YouTube video player" width="341" height="605" src="https://www.youtube.com/embed/bxeOJoi6Vy4?autoplay=1&amp;color=%23BD00FF&amp;controls=0&amp;disablekb=1&amp;fs=0&amp;loop=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;listType=playlist&list=PLY3z9JUkzMbkJTat7z6To_uGXBEYaoj1X&amp;enablejsapi=1&amp;origin=http://infestus.cc&amp;widgetid=1"
+                                    id="undefined" __idm_id__="679983105"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow bounceIn" data-wow-delay="0.4s">
+                            <div class="divise-info">
+                                <h1>Street Art<span>Revolution</span></h1>
+                                <p>O Infestus é um app para descobrir as <span>streetart que estão perto de você.</span> <span>que estão perto de você. </span></p>
+                                <div class="get">
+                                    <a href="#" class="btn-google-play">
+                                        <svg viewBox="0 0 289.789 289.789" style="enable-background:new 0 0 289.789 289.789;">
+									   <g>
+										   <path class="g-color-1" style="fill:#349886;" d="M13.424,13.689c-0.692,2.431-1.165,5.053-1.165,8.048v246.356c0,2.95,0.473,5.544,1.138,7.948
+											   l138.267-130.993C151.664,145.047,13.424,13.689,13.424,13.689z"/>
+										   <path class="g-color-2" style="fill:#3DB39E;" d="M205.621,93.921L44.185,4.121C37.749,0.207,31.413-0.785,26.06,0.58l138.85,131.931
+											   C164.91,132.511,205.621,93.921,205.621,93.921z"/>
+										   <path class="g-color-3" style="fill:#F4B459;" d="M265.142,127.031l-43.088-23.97l-44.135,41.804l44.954,42.733l41.923-23.023
+											   C285.261,152.913,277.796,134.141,265.142,127.031z"/>
+										   <path class="g-color-4" style="fill:#E2574C;" d="M25.65,289.095c5.435,1.52,11.926,0.61,18.526-3.405l161.928-88.907L164.655,157.4
+											   C164.655,157.401,25.65,289.095,25.65,289.095z"/>
+									   </g>
+									   </svg> GOOGLE PLAY
+                                    </a>
+                                    <!--a href="#" class="btn-app-store">
+                                        <svg viewBox="0 0 305 305" style="enable-background:new 0 0 305 305;" xml:space="preserve">
+													<g>
+														<path id="XMLID_229_" d="M40.738,112.119c-25.785,44.745-9.393,112.648,19.121,153.82C74.092,286.523,88.502,305,108.239,305
+															c0.372,0,0.745-0.007,1.127-0.022c9.273-0.37,15.974-3.225,22.453-5.984c7.274-3.1,14.797-6.305,26.597-6.305
+															c11.226,0,18.39,3.101,25.318,6.099c6.828,2.954,13.861,6.01,24.253,5.815c22.232-0.414,35.882-20.352,47.925-37.941
+															c12.567-18.365,18.871-36.196,20.998-43.01l0.086-0.271c0.405-1.211-0.167-2.533-1.328-3.066c-0.032-0.015-0.15-0.064-0.183-0.078
+															c-3.915-1.601-38.257-16.836-38.618-58.36c-0.335-33.736,25.763-51.601,30.997-54.839l0.244-0.152
+															c0.567-0.365,0.962-0.944,1.096-1.606c0.134-0.661-0.006-1.349-0.386-1.905c-18.014-26.362-45.624-30.335-56.74-30.813
+															c-1.613-0.161-3.278-0.242-4.95-0.242c-13.056,0-25.563,4.931-35.611,8.893c-6.936,2.735-12.927,5.097-17.059,5.097
+															c-4.643,0-10.668-2.391-17.645-5.159c-9.33-3.703-19.905-7.899-31.1-7.899c-0.267,0-0.53,0.003-0.789,0.008
+															C78.894,73.643,54.298,88.535,40.738,112.119z"/>
+														<path id="XMLID_230_" d="M212.101,0.002c-15.763,0.642-34.672,10.345-45.974,23.583c-9.605,11.127-18.988,29.679-16.516,48.379
+															c0.155,1.17,1.107,2.073,2.284,2.164c1.064,0.083,2.15,0.125,3.232,0.126c15.413,0,32.04-8.527,43.395-22.257
+															c11.951-14.498,17.994-33.104,16.166-49.77C214.544,0.921,213.395-0.049,212.101,0.002z"/>
+													</g>
+											</svg> APPLE STORE</a-->
+                                </div>
+                                <!--p class="text">Class aptent taciti sociosqu ad litora torquent per conu-<span>bia nostra, per inceptos himenaeos.</span></p-->
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- header -->
+
+    <!--- content -->
+    <div id="portfolio" class="recent-works-text">
+        <!--- container -->
+        <div class="container">
+            <div class="portfolio-text wow bounceIn" data-wow-delay="0.4s">
+                <h2>Street Art em destaque</h2>
+                <p>Conheça as Street Arts mais acessadas e comentadas no Infestus</span>
+                </p>
+            </div>
+            <div id="portfoliolist">
+
+                <div class="portfolio app mix_all" data-cat="app" ng-repeat="item in feed | limitTo:6" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href="#" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img ng-src="{{item.picture}}" />
+                            <div class="b-wrapper">
+                                <h2 class="b-animate b-from-left    b-delay03 ">{{item.artist.name}}</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <!-- Script for gallery Here -->
+            <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+
+                    var filterList = {
+
+                        init: function() {
+
+                            // MixItUp plugin
+                            // http://mixitup.io
+                            $('#portfoliolist').mixitup({
+                                targetSelector: '.portfolio',
+                                filterSelector: '.filter',
+                                effects: ['fade'],
+                                easing: 'snap',
+                                // call the hover effect
+                                onMixEnd: filterList.hoverEffect()
+                            });
+
+                        },
+
+                        hoverEffect: function() {
+
+                            // Simple parallax effect
+                            $('#portfoliolist .portfolio').hover(
+                                function() {
+                                    $(this).find('.label').stop().animate({
+                                        bottom: 0
+                                    }, 200, 'easeOutQuad');
+                                    $(this).find('img').stop().animate({
+                                        top: -30
+                                    }, 500, 'easeOutQuad');
+                                },
+                                function() {
+                                    $(this).find('.label').stop().animate({
+                                        bottom: -40
+                                    }, 200, 'easeInQuad');
+                                    $(this).find('img').stop().animate({
+                                        top: 0
+                                    }, 300, 'easeOutQuad');
+                                }
+                            );
+
+                        }
+
+                    };
+
+                    // Run the show!
+                    filterList.init();
+
+
+                });
+            </script>
+            <!--- Gallery Script Ends -->
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+    <!----- script-for-caption-->
+    <!---content-recent-works -->
+    </div>
+    <!--- our-team -->
+    <!--     <div class="our-team">
+        <div class="container">
+            <div class="our-team-grids">
+                <div class="col-md-4 wow bounceIn" data-wow-delay="0.4s">
+                    <div class="our-team-left-grid">
+                        <h2>OUR TEAM</h2>
+                        <p>Class aptent taciti sociosqu ad litora torquent <span>per conubia nostra, per inceptos himenaeos.</span></p>
+                        <a href="#">ALL</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-4 wow bounceIn" data-wow-delay="0.4s">
+                        <div class="grid-right-left">
+                            <div class="grid-right-left-img"></div>
+                            <h4><a href="#">MELISSA DOE</a></h4>
+                            <p>Director</p>
+                            <div class="icons">
+                                <ul>
+                                    <li class="icon1"><a href="#"><small></small></a></li>
+                                    <li class="icon2"><a href="#"><small></small></a></li>
+                                    <li class="icon3"><a href="#"><small></small></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow bounceIn" data-wow-delay="0.4s">
+                        <div class="grid-right-left">
+                            <div class="grid-right-middle-img"></div>
+                            <h4><a href="#">MIKE DOE</a></h4>
+                            <p>Designer</p>
+                            <div class="icons">
+                                <ul>
+                                    <li class="icon1"><a href="#"><small></small></a></li>
+                                    <li class="icon2"><a href="#"><small></small></a></li>
+                                    <li class="icon3"><a href="#"><small></small></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow bounceIn" data-wow-delay="0.4s">
+                        <div class="grid-right-left">
+                            <div class="grid-right-right-img"></div>
+                            <h4><a href="#">JIMMY DOE</a></h4>
+                            <p>Coder</p>
+                            <div class="icons">
+                                <ul>
+                                    <li class="icon1"><a href="#"><small></small></a></li>
+                                    <li class="icon2"><a href="#"><small></small></a></li>
+                                    <li class="icon3"><a href="#"><small></small></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!--- container -->
+    </div>
+    <!--- our-team -->
+    <!--- latest-posts -->
+    <div class="clearfix" style="border-bottom:solid 1px #eee;"> </div>
+    <div id="blog" class="latest-posts">
+        <!--- container -->
+        <div class="container">
+            <div class="latest-posts-text wow bounceIn" data-wow-delay="0.4s">
+                <h2>SOBRE O INFESTUS</h2>
+                <p>Class aptent taciti sociosqu ad litora torquent per conu-<span>bia nostra, per inceptos himenaeos.</span></p>
+            </div>
+            <div class="latest-posts-grids">
+                <div class="col-md-12 wow bounceIn" data-wow-delay="0.4s">
+                    <div class="latest-posts-grid-right">
+                        <p>
+                            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem
+                            Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem
+                            Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!--- container -->
+    </div>
+    <!-- latest-posts -->
+
+    <!--- contact-us -->
+    <!--- footer -->
+    <div class="footer">
+        <!--- container -->
+        <div class="container">
+            <div class="footer-left">
+                <h2><a href="#">Infestus</a></h2>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="https://www.facebook.com/Infestuscc-1841586429432516/" target="new"><span> </span></a></li>
+                    <!--li><a href="#"><span class="twitter"> </span></a></li-->
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="copy-right">
+                <p>Design by <a href="#">Appock</a></p>
+            </div>
+        </div>
+        <!--- container -->
+    </div>
+    <!--- footer -->
+
+    <!---smoth-scrlling-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = this.hash,
+                    $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 1000, 'swing', function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+    <!---//smoth-scrlling-->
+    <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</head>
+
+</html>
